@@ -1,11 +1,14 @@
-import React from 'react'
+import HealthCheck from "./components/HealthCheck";
+import TestApi from "./components/TestApi";
 
-const App = () => {
+function App() {
   return (
-    <div className='h-screen flex items-center justify-center'>
-      <h1 className='font-bold text-3xl'>Welcome to Rockranger's project</h1>
-    </div>
-  )
+    <>
+      <HealthCheck />
+      <h1>Frontend is running</h1>
+      <TestApi/>
+    </>
+  );
 }
 
-export default App
+export default App;
